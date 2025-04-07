@@ -95,3 +95,5 @@ Foi feita uma previsão para um imóvel com as seguintes características:
 ✅ Conclusão
 
 Após testes com diversos modelos, o XGBoost se destacou como o mais eficiente na previsão de preços, alcançando um R² de 0.5505, o melhor entre os avaliados. Ele foi escolhido como modelo final por equilibrar bom desempenho e robustez.
+
+📄 [Clique aqui para acessar o notebook em PDF com código e saídas](./airbnb_price_prediction.pdf)
