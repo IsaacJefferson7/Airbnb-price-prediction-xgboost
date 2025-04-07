@@ -49,6 +49,7 @@ Modelos testados:
   'n_estimators': 100,
   'subsample': 0.8
 }
+```
 
 📊 Métricas de Avaliação
 Modelo	R²	MAE	MSE
