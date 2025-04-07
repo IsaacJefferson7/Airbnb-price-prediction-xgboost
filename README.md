@@ -52,13 +52,14 @@ Modelos testados:
 ```
 
 📊 Métricas de Avaliação
-Modelo	R²	MAE	MSE
+Modelo	 R²	MAE	MSE
 Regressão Linear	0.5111	23.01	881.54
 Ridge	0.5103	23.04	882.98
 Lasso	0.3920	26.33	1096.35
 Random Forest	0.5428	22.03	824.47
 Gradient Boosting	0.5369	22.50	835.01
 XGBoost	0.5505	22.00	810.34
+
 🏡 Previsão para Novo Imóvel
 
 Foi feita uma previsão para um imóvel com as seguintes características:
