@@ -51,34 +51,37 @@ Modelos testados:
 }
 ```
 
-📊 Métricas de Avaliação
-Modelo	 R²	MAE	MSE
-Regressão Linear	0.5111	23.01	881.54
-Ridge	0.5103	23.04	882.98
-Lasso	0.3920	26.33	1096.35
-Random Forest	0.5428	22.03	824.47
-Gradient Boosting	0.5369	22.50	835.01
-XGBoost	0.5505	22.00	810.34
+## 📊 Métricas de Avaliação dos Modelos
 
-🏡 Previsão para Novo Imóvel
+| Modelo               | R²     | MAE   | MSE     |
+|----------------------|--------|-------|---------|
+| Regressão Linear     | 0.5111 | 23.01 | 881.54  |
+| Ridge                | 0.5103 | 23.04 | 882.98  |
+| Lasso                | 0.3920 | 26.33 | 1096.35 |
+| Random Forest        | 0.5428 | 22.03 | 824.47  |
+| Gradient Boosting    | 0.5369 | 22.50 | 835.01  |
+| **XGBoost (🏆 melhor)** | **0.5505** | **22.00** | **810.34** |
+
+
+## 🏡 Previsão para Novo Imóvel
 
 Foi feita uma previsão para um imóvel com as seguintes características:
 
-{
-  'latitude': 40.75362,
-  'longitude': -73.98377,
-  'minimo_noites': 1,
-  'numero_de_reviews': 45,
-  'reviews_por_mes': 0.38,
-  'calculado_host_listings_count': 2,
-  'disponibilidade_365': 355,
-  'bairro_group_Manhattan': 1,
-  'bairro_Midtown': 1,
-  'room_type_Entire home/apt': 1
-}
+- **Latitude:** 40.75362  
+- **Longitude:** -73.98377  
+- **Mínimo de Noites:** 1  
+- **Número de Reviews:** 45  
+- **Reviews por Mês:** 0.38  
+- **Host Listings Count:** 2  
+- **Disponibilidade (365 dias):** 355  
+- **Bairro Grupo:** Manhattan  
+- **Bairro:** Midtown  
+- **Tipo de Quarto:** Entire home/apt
 
 📌 Preço previsto: US$ 157.73
-🛠️ Tecnologias Utilizadas
+
+
+## 🛠️ Tecnologias Utilizadas
 
     Python (Pandas, NumPy, Scikit-learn)
 
