@@ -201,7 +201,7 @@ print("Preço mínimo:", df_clean['price'].min())
 print("Preço máximo:", df_clean['price'].max())
 
 
-## Análise Exploratória dos Dados (EDA)
+##.............................................................Análise Exploratória dos Dados (EDA).............................................................##
 
 df_clean.describe()
 
