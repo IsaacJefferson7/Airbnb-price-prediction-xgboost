@@ -11,7 +11,7 @@ df.head()
 
 
 
-## ANÁLISE PRIMITIVA DOS DADOS
+##.............................................................ANÁLISE PRIMITIVA DOS DADOS.............................................................##
 
 # Imprime a quantidade de dados nulos existentes em cada coluna do dataframe.
 print(df.isnull().sum())
@@ -43,7 +43,7 @@ print("{:.4f}%".format((len(df[df.minimo_noites > 30]) / df.shape[0])*100))
 
 
 
-## LIMPEZA DE DADOS:
+##.............................................................LIMPEZA DE DADOS.............................................................##
 
 # remover os *outliers* em um novo DataFrame
 df_clean = df.copy()
@@ -276,7 +276,7 @@ plt.tight_layout()
 plt.show()
 
 
-## PERGUNTA 1:
+##.............................................................PERGUNTA 1.............................................................##
 
 # Define o tamanho da figura e o número de subplots (3 linha, 3 colunas)
 fig, axs = plt.subplots(2, 2, figsize=(18, 10))
@@ -313,7 +313,7 @@ plt.tight_layout()
 plt.show()
 
 
-## PERGUNTA 2:
+##.............................................................PERGUNTA 2.............................................................##
 
 # Define o tamanho da figura e o número de subplots (3 linha, 3 colunas)
 fig, axs = plt.subplots(1, 2, figsize=(18, 6))
@@ -338,7 +338,7 @@ plt.tight_layout()
 plt.show()
 
 
-## PERGUNTA 3:
+##.............................................................PERGUNTA 3.............................................................##
 
 # Criando faixas de preço
 df_clean['faixa_preco'] = pd.cut(df_clean['price'], bins=[0, 69, 175, df_clean['price'].max()], labels=['Baixo', 'Médio', 'Alto'])
@@ -383,13 +383,13 @@ print("\nPalavras exclusivas na faixa de preço 'Alto':")
 print(sorted(palavras_exclusivas_alto.items(), key=lambda x: x[1], reverse=True)[:15])  # Exibindo as 10 mais comuns
 
 
-## PREVISÃO DE NOVOS DADOS
+##.............................................................PREVISÃO DE NOVOS DADOS.............................................................##
 
 print(df_clean.isnull().sum())
 
 df_clean.dtypes
 
-#!pip install xgboost
+!pip install xgboost    # Caso usar o código no jupyter notebook e a biblioteca não tiver sido instalada.
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -460,7 +460,7 @@ for nome, modelo in modelos.items():
     print(f"MSE: {mse:.2f}")
 
 
-## PREVISÃO DO PREÇO DO NOVO IMÓVEL:
+##.............................................................PREVISÃO DO PREÇO DO NOVO IMÓVEL.............................................................##
 
 # Informações do novo imóvel
 novo_imovel = {
